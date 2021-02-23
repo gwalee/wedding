@@ -47,17 +47,18 @@
 	margin: 20px 0 100px 0;
 }
 
-.product_detail .form label{
+.product_detail .contain form{
 	margin-bottom: 50px;
 }
 
 .product_detail .contain a{
-	margin-top: 50px;
+	padding-top-top: 50px;
+	box-sizing: border-box;
 	text-align: center;
 	background-color: #FFC9C9;
 	width: 150px;
 	height: 30px;
-	margin-top: 50px;
+	padding: 5px; 
 	font-size: 20px;
 }
 
