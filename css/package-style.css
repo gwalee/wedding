@@ -1,0 +1,45 @@
+.page_title .inside2{
+	background-image: url(../img/package_img/package_bg1.jpg);
+	height: 200px;
+}
+
+.package table{
+	width: 1000px;
+	margin: 0 auto;
+	border: 1px solid #707070;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	line-height: 50px;
+}
+
+.package td{
+	height: 50px;
+	width: 100px;
+	border: 1px solid #707070; 
+}
+
+.package td:first-child{
+	font-weight: bold;
+}
+
+.package tr{
+	border: 1px solid #707070;
+}
+
+.package .list-title{
+	font-weight: bold;
+}
+
+.package tr:nth-child(10){
+	text-decoration: line-through;
+}
+
+.package .discount  td{
+	color: red;
+}
+
+.package p{
+	padding-left: 100px;
+	padding-bottom: 300px;
+}
