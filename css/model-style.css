@@ -11,7 +11,7 @@ body{
 	line-height: 1.6;
 }
 
-.wrapper{
+main{
 	width: 1200px;
 	margin: 0 auto;
 }
@@ -32,7 +32,7 @@ a{
 
 /*-----------header---------------*/
 
-.header{
+header{
 	display: flex;
 	background-color: #FFC9C9;
 	height: 60px;
@@ -46,66 +46,72 @@ a{
 	z-index: 1;
 }
 
-.header .logo a{
+header .logo a{
 	display: flex;
 	padding-right: 80px;
 }
 
-.header .logo img{
+header .logo img{
 	width: 50px;
 }
 
-.header .logo h1{
+header .logo h1{
 	padding-top: 15px;
 }
 
-.header .nav{
+header nav ul{
 	display: flex;
 }
 
-.header .nav > li{
+nav ul > li{
 	padding: 20px;
 	position: relative;
 }
 
-.header .nav li ol{
+header nav ol{
 	width: 100px;
     background-color: #FFC9C9;
     position: absolute;
 	display: none;
+	padding: 0;
 }
 
-.header ol a{
+header ol a{
 	display: block;
     line-height: 40px;
     text-align: center;
     color: #707070;
 }
 
-.header ol a:hover{
+header ol a:hover{
 	background-color: #FFFFFF;	
 }
 
-.header .nav li:hover ol{
+header nav li:hover ol{
   display: block;
 }
 
-.header .cart{
+header .cart{
 	display: flex;
 	padding-left: 100px;
 }
 
-.header .cart li{
+header .cart li{
 	padding-right: 30px;
 }
 
-.header ul a:hover{
+header ul a:hover{
 	color: #FF4646;
 }
 
-/*.header .underline{
-	color: #FF4646;
-}*/
+header .underline{
+	text-decoration: underline;
+}
+
+.page_title{
+	width: 1200px;
+	margin: 0 auto;
+}
 
 .page_title h1{
 	font-size: 36px;
@@ -116,6 +122,9 @@ a{
 }
 
 /*--------------breadcrumb-----------------*/
+.breadcrumb .breadcrumb_list{
+	margin-left: 50px;
+}
 
 .breadcrumb .breadcrumb_list li{
 	display: inline-block;
@@ -141,7 +150,7 @@ a{
 
 /*--------------footer-----------------*/
 
-.footer{
+footer{
 	display: flex;
 	background-color: #FFC9C9;
 	padding-top: 10px;
@@ -153,11 +162,11 @@ a{
 	min-width: 1200px;
 }
 
-.footer .logo img{
+footer .logo img{
 	height: 100px;
 }
 
-.footer .text{
+footer .text{
 	padding-top: 10px;
 	margin-left: 80px;
 }

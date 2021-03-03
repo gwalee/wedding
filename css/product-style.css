@@ -5,23 +5,25 @@
 
 .product{
 	display: flex;
+	width: 1200px;
+	margin: 0 auto;
 }
 
-.product .aside{
+.product aside{
 	margin-top: 100px;
 	width: 150px;
 }
 
-.product .aside select{
+.product aside select{
 	margin-bottom: 15px;
 }
 
-.product .section{
+.product section{
 	width: 1050px;
 	margin-top: 50px;
 }
 
-.product .section .small-title{
+.product section .small-title{
 	padding-left: 10px;
 }
 
@@ -59,7 +61,7 @@
 	display: flex;
 	text-align: center;
 	justify-content: center;
-	margin: 200px 0 20px 0;
+	margin: 50px 0 20px 0;
 }
 
 .product .pagination li{
