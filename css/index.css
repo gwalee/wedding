@@ -177,7 +177,7 @@
 	} 
 	.top .left ul.nav_list{
 		display: block;
-		padding-top: 60px;
+		padding-top: 0px;
 		margin-left: 4%;
 	}
 	.top ul.nav_list > li{

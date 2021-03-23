@@ -219,8 +219,7 @@ footer .text{
 	header ul.nav_list > li{
 		display: block;
 		padding: 10px;
-		border: 1px solid red;
-		padding-left: 20%;
+		padding-left: 10%;
 	}
 	header button.btn_switch{
 		display: inline-block;
@@ -229,7 +228,7 @@ footer .text{
 		left: 4%;
 	}
 	header nav ol{
-		margin-left: 4%;
+		margin-left: 8%;
 	}
 	nav.main_nav{
 		display: none;
