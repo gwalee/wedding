@@ -453,8 +453,8 @@ button.owl-next{
 }
 .case .pic .img_div{
     display: inline-block;
-    width: calc(100%/4);
-    font-size: 0;
+    width: calc(100% / 4);
+    /* font-size: 0; */
     position: relative;
     margin-bottom: 20px;
 }
@@ -479,8 +479,18 @@ button.owl-next{
     opacity: 1;           
 }
 
-
-
+@media screen and (min-width: 576px) and (max-width: 767px){
+	.case .pic .img_div{
+		width: calc(100%/3);
+	}
+  }
+  @media screen and (max-width: 575px){
+	.case .pic .img_div{
+		width: calc(100%/2);
+		border: 1px solid red;
+	}
+  }
+  
 
 /* .case .main-block .pic{
 	display: grid;

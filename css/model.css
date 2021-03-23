@@ -106,8 +106,6 @@ header ol a:hover{
 	background-color: #fdd0d0;
 }
 
-
-
 header .cart{
 	display: flex;
 	padding-left:100px;
@@ -211,9 +209,18 @@ footer .text{
 		top: 10px;
 		left: 30%;
 	}
+	header nav.main_nav{
+		width: 100%;
+	}
+
+	header ul.nav_list{
+		width: 100%;
+	}
 	header ul.nav_list > li{
 		display: block;
 		padding: 10px;
+		border: 1px solid red;
+		padding-left: 20%;
 	}
 	header button.btn_switch{
 		display: inline-block;
@@ -221,9 +228,9 @@ footer .text{
 		top: 20px;
 		left: 4%;
 	}
-	/* header nav ol{
-		margin-left: 20%;
-	} */
+	header nav ol{
+		margin-left: 4%;
+	}
 	nav.main_nav{
 		display: none;
 	}
