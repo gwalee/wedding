@@ -3,59 +3,67 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/model-style.css">
-	<link rel="stylesheet" href="css/about-style.css">
+	<link rel="stylesheet" href="css/model.css">
+	<link rel="stylesheet" href="css/about.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<title>Easying Wedding_about page</title>
 </head>
 <body>
 	<header>
-		<div class="logo">
-			<a href="index.html"><img src="img/index_img/logo_white.png" alt=""><h1>asing Wedding</h1></a>
+		<div class="parent_container">
+			<div class="logo">
+				<a href="index.html"><img src="img/index_img/logo_white.png" alt=""><h1>asing Wedding</h1></a>
+			</div>
+	
+			<button type="button" class="btn_switch"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></button>
+			
+			<nav class="main_nav">
+				<ul class ="nav_list">
+					<li>
+					<a href="product.html">婚禮佈置</a>
+					<ol>
+					   <li><a href="product.html">單品出租</a></li>
+					   <li><a href="product.html">背板套餐</a></li>
+					   <li><a href="product.html">桌面套餐</a></li>
+					   <li><a href="product.html">舞台佈置</a></li>
+					   <li><a href="product.html">CandyBar</a></li>
+					</ol>
+					</li>
+					<li>
+						<a href="package.html">婚禮包套</a>
+					</li>
+					<li>
+						<a href="process.html">服務流程</a>
+					</li>
+					<li>
+						<a href="knowledge.html">婚禮知識</a>
+						<ol>
+						   <li><a href="knowledge.html">婚禮習俗</a></li>
+						   <li><a href="knowledge.html">婚紗技巧</a></li>
+						   <li><a href="knowledge.html">佈置選擇</a></li>
+						   <li><a href="knowledge.html">Q&A</a></li>
+						</ol>
+					</li>
+					<li class="this_page">
+						<a href="about.html">關於我們</a>
+					</li>
+					<li>
+						<a href="#">線上客服</a>
+					</li>
+				</ul>
+			</nav>
+	
+			<ul class="cart">
+				<li><a href="#"><i class="fa fa-shopping-cart " aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+			</ul>
 		</div>
 
-		<nav>
-			<ul>
-				<li>
-				<a href="product.html">婚禮佈置</a>
-				<ol>
-			       <li><a href="product.html">單品出租</a></li>
-			       <li><a href="product.html">背板套餐</a></li>
-			       <li><a href="product.html">桌面套餐</a></li>
-			       <li><a href="product.html">舞台佈置</a></li>
-			       <li><a href="product.html">CandyBar</a></li>
-			    </ol>
-				</li>
-				<li>
-					<a href="package.html">婚禮包套</a>
-				</li>
-				<li>
-					<a href="process.html">服務流程</a>
-				</li>
-				<li>
-					<a href="knowledge.html">婚禮知識</a>
-					<ol>
-				       <li><a href="knowledge.html">婚禮習俗</a></li>
-				       <li><a href="knowledge.html">婚紗技巧</a></li>
-				       <li><a href="knowledge.html">佈置選擇</a></li>
-				       <li><a href="knowledge.html">Q&A</a></li>
-				    </ol>
-				</li>
-				<li class="underline">
-					<a href="about.html">關於我們</a>
-				</li>
-				<li>
-					<a href="#">線上客服</a>
-				</li>
-			</ul>
-		</nav>
 
-		<ul class="cart">
-			<li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
-			<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-		</ul>	
-		
 	</header>
+	
 
 	<div class="page_title">
 		<div class="inside5">
@@ -84,9 +92,9 @@
 				<img src="img/about_img/environment.jpg" alt="">
 				<div class="text">
 					<h3 class="small-title">環境介紹</h3>
-					<p>Easying Wedding提供優雅舒適的討論空間,<br>只要有任何婚禮相關問題,<br>都歡迎到我們的工作室來與我們的顧問討論~<br>我們的顧問將提供你最誠摯的建議~</p>
+					<p>Easying Wedding提供了<br>優雅舒適的討論空間,<br>只要有任何婚禮相關問題,<br>都歡迎到我們的工作室來與我們做討論~<br>我們的顧問將提供你最誠摯的建議~</p>
 				</div>
-				<div class="dim_pic">
+				<div class="dim_pic" data-aos="zoom-in-up" >
 					<img src="img/about_img/diamond.jpg" alt="" class="diamond">
 				</div>
 			</div>
@@ -126,6 +134,11 @@
 			</ul>
 		</div>
 	</footer>
-	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/model.js"></script>
+	<script>
+		AOS.init();
+	</script>
 </body>
 </html>

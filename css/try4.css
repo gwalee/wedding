@@ -1,0 +1,33 @@
+
+.case .pic{
+    font-size: 0;
+}
+.case .pic .img_div{
+    display: inline-block;
+    width: calc(100%/4);
+    font-size: 0;
+    position: relative;
+    margin-bottom: 20px;
+}
+.case .img_div img{
+    width: 100%;
+}
+.mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(101, 101, 101, 0.8);
+    color: #ffffff;
+    opacity: 0;
+    width: 100% ;
+    height: 100%;
+}
+.mask h3 {
+    font-size: 16px;
+    text-align: center;
+}
+.img_div a:hover .mask {
+    opacity: 1;           
+}
+
+

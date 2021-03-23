@@ -1,0 +1,143 @@
+.page_title .inside3{
+	background-image: url(../img/process_img/process_bg1.jpg);
+	height: 200px;
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.process .small-title{
+	font-weight: bold;
+}
+
+.process .st_line{
+	width: 5px;
+	height: 150px;
+	background-color: #FFC9C9;
+}
+
+.process .step{
+	display: flex;
+	padding-left: 150px;
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.process .step .right-odd,.process .step .left-even{
+	display: flex;
+}
+
+.process .right-odd{
+	padding-left: 250px;
+	padding-top: 30px;
+}
+
+.process .step span{
+	padding-right: 50px;
+	padding-top: 30px;
+}
+
+.process .text h3{
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+}
+
+.process .text p{
+	padding-left: 20px;
+}
+
+.process .right-even img{
+	padding-top: 20px;
+	padding-left: 250px;
+}
+
+.process .forth .right-even{
+	padding-left: 100px;
+}
+
+.process .left-even{
+	padding-top: 40px;
+}
+
+.process .second, .process .forth, .process .sixth{
+	background-color: #F3F0F0;
+}
+
+@media screen and (max-width: 1199px){
+	.process .step{
+		padding-left: 50px;
+	}
+}
+
+@media screen and (min-width: 992px)and (max-width: 1199px){
+	.process .right-odd {
+		padding-left: 200px;
+	}
+	.process .right-even img {
+		padding-left: 150px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+	.process .right-odd {
+		padding-left: 100px;
+	}
+	.process .right-even img {
+		padding-left: 80px;
+	}
+	.process .step {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	.process .third .left-odd{
+		padding-top: 30px;
+
+	}
+	.process .forth .right-even img{
+		max-width: 95%;
+		margin-top: 30px;
+	}
+
+	.process .sixth .right-even{
+		padding-top: 40px;
+	}
+}
+
+@media screen  and (max-width: 767px){
+	.process .step{
+		display: block;
+		padding: 0 20px 20px 20px;
+		height: 200px;
+		position: relative;
+	}
+	.process .right-odd {
+		padding-left: 10px;
+	}
+	.process .step img{
+		height: 120px;
+	}
+	.process .left-odd img{
+		position: absolute;
+		bottom: 20px;
+		left: 100px;
+		display: none;
+	}
+
+	.process .right-even img{
+		position: absolute;
+		bottom: 40px;
+		left: 50px;
+		display: none;
+		
+	}
+	/* .process .forth .right-even{
+		padding-left: 50px;
+	} */
+	.process .step span {
+		padding-right: 20px;
+	}
+	.process .st_line{
+		width: 2px;
+		height: 120px;
+	}
+}

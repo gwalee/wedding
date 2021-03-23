@@ -1,10 +1,13 @@
 .page_title .inside2{
 	background-image: url(../img/package_img/package_bg1.jpg);
 	height: 200px;
+	background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .package table{
-	width: 1000px;
+	max-width: 1000px;
+	width: 100%;
 	margin: 0 auto;
 	border: 1px solid #707070;
 	text-align: center;
@@ -14,8 +17,8 @@
 }
 
 .package td{
-	height: 50px;
-	width: 100px;
+	padding: 10px 10px;
+	width: calc(100%/4);
 	border: 1px solid #707070; 
 }
 
@@ -41,5 +44,27 @@
 
 .package p{
 	padding-left: 100px;
-	padding-bottom: 300px;
+	padding-bottom: 100px;
+}
+@media screen  and (max-width: 1199px){
+	.package p{
+		padding-left: 0;
+	}
+}
+
+@media screen and (max-width: 991px){
+	.package table{
+		line-height: 1.6;
+	}
+		
+}
+
+@media screen and (max-width: 575px){
+	.package table{
+		width: calc(100% - 40px);
+		font-size: 14px;
+	}
+	.package p{
+		padding-left: 10px;
+	}
 }

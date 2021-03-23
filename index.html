@@ -3,9 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/model-style.css">
-	<link rel="stylesheet" href="css/index-style.css">
+	<link rel="stylesheet" href="css/model.css">
+	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- 輪播圖 -->
+	<link rel="stylesheet" href="js/owl.carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="js/owl.carousel/owl.theme.default.min.css">
+	<!-- AOS效果 -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<title>Easy Wedding_index page</title>
 </head>
 <body>
@@ -15,45 +21,80 @@
 				<li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
 				<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
 			</ul>
-			<ul class="nav">
-				<li><a href="product.html">婚禮佈置</a></li>
-				<li><a href="package.html">婚禮包套</a></li>
-				<li><a href="process.html">服務流程</a></li>
-				<li><a href="knowledge.html">婚禮知識</a></li>
-				<li><a href="about.html">關於我們</a></li>
-				<li><a href="#">線上客服</a></li>
-			</ul>
+
+			<button type="button" class="btn_switch"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></button>
+
+			<nav class="main_nav">
+				<ul class ="nav_list">
+					<li class="btn_switch">
+					<a href="product.html">婚禮佈置</a>
+					<ol>
+					   <li><a href="product.html">單品出租</a></li>
+					   <li><a href="product.html">背板套餐</a></li>
+					   <li><a href="product.html">桌面套餐</a></li>
+					   <li><a href="product.html">舞台佈置</a></li>
+					   <li><a href="product.html">CandyBar</a></li>
+					</ol>
+					</li>
+					<li>
+						<a href="package.html">婚禮包套</a>
+					</li>
+					<li>
+						<a href="process.html">服務流程</a>
+					</li>
+					<li>
+						<a href="knowledge.html">婚禮知識</a>
+						<ol>
+						   <li><a href="knowledge.html">婚禮習俗</a></li>
+						   <li><a href="knowledge.html">婚紗技巧</a></li>
+						   <li><a href="knowledge.html">佈置選擇</a></li>
+						   <li><a href="knowledge.html">Q&A</a></li>
+						</ol>
+					</li>
+					<li>
+						<a href="about.html">關於我們</a>
+					</li>
+					<li>
+						<a href="#">線上客服</a>
+					</li>
+				</ul>
+			</nav>
+
 			<div class="logo">
-				<a href="index.html"><img src="img/index_img/logo_pink.png" alt=""></a>
-				<h1>asing Wedding</h1>	
+				<a href="index.html"><img src="img/index_img/logo_pink.png" alt=""></a><span>Easing Wedding <br>婚禮佈置</span>
 			</div>
-			<span>婚禮佈置</span>
+			
 		
 		</div>
-		<div class="right"></div>
-		<a href="#prod"><i class="fa fa-angle-double-left fa-5x" aria-hidden="true"></i></a>
+		<div class="right">
+			<a href="#prod"><i class="fa fa-angle-double-down fa-5x" aria-hidden="true"></i></a>
+		</div>
+		
 	</div>
 
 	<!----------------product---------------->
 	<main>
-
 		<div class="prod" id="prod">
 			<div class="main-block">
 				<h2 class="sub-title">婚禮佈置</h2>
 				<div class="line"></div>
-				<ul>
-					<li><img src="img/index_img/decorate_item.jpg" alt=""><a href="#"><h3 class="small-title">單品出租</h3></a></li>
-					<li><img src="img/index_img/decorate_bg.jpg" alt=""><a href="product.html"><h3 class="small-title">背板套餐</h3></a></li>
-					<li><img src="img/index_img/decorate_table.jpg" alt=""><a href="#"><h3 class="small-title">桌面套餐</h3></a></li>
+				<ul class="owl-carousel owl-theme">
+					<li class="item"><img src="img/index_img/decorate_item.jpg" alt=""><a href="#"><h3 class="small-title">單品出租</h3></a></li>
+					<li class="item"><img src="img/index_img/decorate_bg.jpg" alt=""><a href="product.html"><h3 class="small-title">背板套餐</h3></a></li>
+					<li class="item"><img src="img/index_img/decorate_table.jpg" alt=""><a href="#"><h3 class="small-title">桌面套餐</h3></a></li>
+					<li class="item"><img src="img/index_img/decorate_stage.jpg" alt=""><a href="#"><h3 class="small-title">舞台佈置</h3></a></li>
+					<li class="item"><img src="img/index_img/decorate_cb.jpg" alt=""><a href="#"><h3 class="small-title">CandyBar</h3></a></li>
+	
 				</ul>
 			</div>
-			<!-- <a class="msg" href="#"><img src="img/index_img/msg.png" alt=""></a> -->
+			
 		</div>
 		
 	<!----------figure--------------->
 		<div class="figure">
 			<div class="divider"><img src="img/index_img/diamond_line.jpg" alt=""></div>
-			<div class="flower"><p>女人一生一次的婚禮</p></div>
+			<div class="flower" data-aos="fade-up"
+			data-aos-anchor-placement="center-bottom"><p>女人一生一次的婚禮</p></div>
 		</div>
 
 	<!-------------------package----------------->
@@ -62,9 +103,14 @@
 				<h2 class="sub-title">婚禮包套</h2>
 				<div class="line"></div>
 				<ul class="frame">
-					<li class="frame1"><h3 class="small-title">小資專案</h3><p>適合預算有限的新人</p></li>
-					<li class="frame2"><h3 class="small-title">經典專案</h3><p>適合想要有完整<br>的佈置又不想花<br>費太多的新人</p></li>
-					<li class="frame3"><h3 class="small-title">璀璨專案</h3><p>適合預算充裕<br>且有較多自己<br>想法的新人</p></li>
+					<li class="frame1" data-aos="fade-down"
+					data-aos-easing="linear"
+					data-aos-duration="1500"><h3 class="small-title">小資專案</h3><p>適合預算有限的新人</p></li>
+					<li class="frame2"  data-aos="fade-up"
+					data-aos-duration="3000" ><h3 class="small-title">經典專案</h3><p>適合想要有完整<br>的佈置又不想花<br>費太多的新人</p></li>
+					<li class="frame3" data-aos="fade-down"
+					data-aos-easing="linear"
+					data-aos-duration="1500"><h3 class="small-title">璀璨專案</h3><p>適合預算充裕<br>且有較多自己<br>想法的新人</p></li>
 				</ul>
 				<a href="package.html">詳細內容</a>
 			</div>
@@ -77,19 +123,128 @@
 				<div class="line"></div>
 				<div class="gray">
 					<ul>
-						<li><i class="fa fa-calendar fa-5x" aria-hidden="true"></i><p>1.瀏覽喜歡的商品<br>並確認檔期</p></li>
-						<li><i class="fa fa-shopping-cart fa-5x" aria-hidden="true"></i><p>2.加入購物車及<br>付清款項</p></li>
-						<li><i class="fa fa-phone fa-5x" aria-hidden="true"></i><p>3.專人將與你連絡<br>確認細節</p></li>
-						<li><i class="fa fa-map-marker fa-5x" aria-hidden="true"></i><p>4.商品將於前兩天<br>送至指定地點</p></li>
-						<li><i class="fa fa-wrench fa-5x" aria-hidden="true"></i><p>5.安裝背板與佈置</p></li>
-						<li><i class="fa fa-truck fa-5x" aria-hidden="true"></i><p>6.婚禮完成後兩天<br>將派人收取物件</p></li>
+						<li><i class="fa fa-calendar" aria-hidden="true"></i><p>1.瀏覽喜歡的商品<br>並確認檔期</p></li>
+						<li><i class="fa fa-shopping-cart" aria-hidden="true"></i><p>2.加入購物車及<br>付清款項</p></li>
+						<li><i class="fa fa-phone" aria-hidden="true"></i><p>3.專人將與你連絡<br>確認細節</p></li>
+						<li><i class="fa fa-map-marker" aria-hidden="true"></i><p>4.商品將於前兩天<br>送至指定地點</p></li>
+						<li><i class="fa fa-wrench" aria-hidden="true"></i><p>5.安裝背板與佈置</p></li>
+						<li><i class="fa fa-truck" aria-hidden="true"></i><p>6.婚禮完成後兩天<br>將派人收取物件</p></li>
 					</ul>
 					<a href="process.html">詳細內容</a>
 				</div>
 			</div>
 		</div>
 	<!---------------case--------------->
-		<div class="case">
+	<div class="case">
+        <div class="main-block">
+            <h2 class="sub-title">佈置實例</h2>
+            <div class="line"></div>
+            <div class="pic">
+                <div class="img_div">
+                    <img src="img/index_img/dc_ex2.jpg" alt="">
+                    <a href="#">
+                        <div class="mask">
+                           <h3>2020/12 張王府訂婚</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="img_div">
+                    <img src="img/index_img/dc_ex3.jpg" alt="">
+                    <a href="#">
+                        <div class="mask">
+                           <h3>2020/8 林陳府結婚</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="img_div">
+                    <img src="img/index_img/dc_ex4.jpg" alt="">
+                    <a href="#">
+                        <div class="mask">
+                           <h3>2020/2 余沈府結婚</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="img_div">
+                    <img src="img/index_img/dc_ex5.jpg" alt="">
+                    <a href="#">
+                        <div class="mask">
+                           <h3>2019/2 陳王府結婚</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="img_div">
+                    <img src="img/index_img/dc_ex6.jpg" alt="">
+                    <a href="#">
+                        <div class="mask">
+                           <h3>2018/12 柯陳府訂婚</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="img_div">
+                    <img src="img/index_img/dc_ex7.jpg" alt="">
+                    <a href="#">
+                        <div class="mask">
+                           <h3>2019/5 黃李府結婚</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="img_div">
+                    <img src="img/index_img/dc_ex8.jpg" alt="">
+                    <a href="#">
+                        <div class="mask">
+                           <h3>2019/3 陳李府結婚</h3>
+                        </div>
+                    </a>
+                </div>
+				<div class="img_div">
+                    <img src="img/index_img/dc_ex9.jpg" alt="">
+                    <a href="#">
+                        <div class="mask">
+                           <h3>2017/6 林林府訂婚</h3>
+                        </div>
+                    </a>
+                </div>
+				<div class="img_div">
+                    <img src="img/index_img/dc_ex10.jpg" alt="">
+                    <a href="#">
+                        <div class="mask">
+                           <h3>2019/8 林黃府結婚</h3>
+                        </div>
+                    </a>
+                </div>
+				<div class="img_div">
+                    <img src="img/index_img/dc_ex11.jpg" alt="">
+                    <a href="#">
+                        <div class="mask">
+                           <h3>2017/5 蕭杜府結婚</h3>
+                        </div>
+                    </a>
+                </div>
+				<div class="img_div">
+                    <img src="img/index_img/dc_ex12.jpg" alt="">
+                    <a href="#">
+                        <div class="mask">
+                           <h3>2019/8 吳蔡府訂婚</h3>
+                        </div>
+                    </a>
+                </div>
+				<div class="img_div">
+                    <img src="img/index_img/dc_ex13.jpg" alt="">
+                    <a href="#">
+                        <div class="mask">
+                           <h3>2019/3 游葉府結婚</h3>
+                        </div>
+                    </a>
+                </div>
+				
+                
+            </div>
+        </div>
+    </div>
+	
+
+
+		<!-- <div class="case">
 			<div class="main-block">
 				<h2 class="sub-title">佈置實例</h2>
 				<div class="line"></div>
@@ -104,7 +259,7 @@
 					<a href="" class="pic8"><img src="img/index_img/dc_ex8.jpg" alt=""></a>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</main>
 
 <!----------------footer------------------->
@@ -120,6 +275,38 @@
 			</ul>
 		</div>
 	</footer>
-	
+	<!-- AOS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/model.js"></script>
+	<script>
+		AOS.init();
+	</script>
+	<!-- 輪播 -->
+    <script src="js/owl.carousel/jquery.min.js"></script>
+    <script src="js/owl.carousel/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                items: 1,
+				autoplay: false,
+                nav: true,
+				navText: ['<','>'],
+                dots : false,
+                margin: 20,
+                responsive: {
+                    0: {
+                        items: 1 
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3 
+                    }
+                }   
+            });
+        })   
+    </script>
 </body>
 </html>
