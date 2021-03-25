@@ -20,7 +20,7 @@
 			<nav class="main_nav">
 				<ul class ="nav_list">
 					<li class="this_page">
-					<a href="product.html">婚禮佈置 </a>
+					<a href="product.html">婚禮佈置 <i class="fa fa-angle-down" aria-hidden="true"></i></a>
 					<ol>
 					   <li><a href="product.html">單品出租</a></li>
 					   <li><a href="product.html">背板套餐</a></li>
@@ -36,7 +36,7 @@
 						<a href="process.html">服務流程</a>
 					</li>
 					<li>
-						<a href="knowledge.html">婚禮知識</a>
+						<a href="knowledge.html">婚禮知識 <i class="fa fa-angle-down" aria-hidden="true"></i></a>
 						<ol>
 						   <li><a href="knowledge.html">婚禮習俗</a></li>
 						   <li><a href="knowledge.html">婚紗技巧</a></li>
@@ -67,7 +67,7 @@
 			<li><a href="index.html">首頁</a></li>
 			<li><a href="#">婚禮佈置</a></li>
 			<li><a href="product.html">背板套餐</a></li>
-			<li><a href="#">英倫風背板套餐</a></li>
+			<li><a href="#">英倫風</a></li>
 		</ul>
 	</div>
 
@@ -75,16 +75,21 @@
 		<div class="product_detail">
 			<div class="top">
 				<div class="pic">
-					<div class="pic_up">
-						<img src="img/product_img/BG_1-1.png" alt="">
+					<div class="img_block">
+						<img src="img/product-detail_img/BG_1-1.jpg" class="b -on" data-img="img1">
+						<img src="img/product-detail_img/BG_1-2.jpg" class="b" data-img="img2">
+						<img src="img/product-detail_img/BG_1-3.jpg" class="b" data-img="img3">
+						<img src="img/product-detail_img/BG_1-4.jpg" class="b" data-img="img4">
 					</div>
-					<div class="pic_down">
-						<img src="img/product-detail_img/BG_1-2.jpg" alt="">
-						<img src="img/product-detail_img/BG_1-3.jpg" alt="">
-						<img src="img/product-detail_img/BG_1-4.png" alt="">
+					<div class="btn_block">
+						<button type="button" data-target="img1" class="a"><img src="img/product-detail_img/BG_1-1.jpg" alt=""></button>
+						<button type="button" data-target="img2" class="a"><img src="img/product-detail_img/BG_1-2.jpg" alt=""></button>
+						<button type="button" data-target="img3" class="a"><img src="img/product-detail_img/BG_1-3.jpg" alt=""></button>
+						<button type="button" data-target="img4" class="a"><img src="img/product-detail_img/BG_1-4.jpg" alt=""></button>
 					</div>
+					
 				</div>
-				
+
 				<div class="contain">
 					<h2 class="sub-title">	英倫風背板套餐<br>租金NT$4200</h2>
 					<ul class="ps">
@@ -177,5 +182,29 @@
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="js/model.js"></script>
+	<script>
+		var btn_a = document.getElementsByClassName("a");
+		for(let j = 0; j < btn_a.length; j++){
+		
+		btn_a[j].addEventListener("click", function(){
+			let imgs_b = document.getElementsByClassName("b");
+			for(let i = 0; i < imgs_b.length; i++){
+			//console.log(i)
+			imgs_b[i].classList.remove("-on");
+			}
+			let data_target = this.getAttribute("data-target");
+			
+			for(let i = 0; i < imgs_b.length; i++){
+			if(data_target == imgs_b[i].getAttribute("data-img")){
+				
+				imgs_b[i].classList.add("-on");
+			}
+
+			}
+		})
+		
+		}
+	</script>
+
 </body>
 </html>
