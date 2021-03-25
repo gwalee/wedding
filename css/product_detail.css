@@ -104,6 +104,9 @@
 .product_detail .contain a:hover{
 	color: #FF4646;
 }
+.product_detail .middle{
+	margin-left: 50px;
+}
 
 .product_detail .middle .title{
 	display: flex;

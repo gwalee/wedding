@@ -80,27 +80,8 @@ header .nav_list > li{
 	display: inline-block ;
 	padding: 20px;
 	position: relative;
+	cursor:pointer;
 }
-
-/* header nav ol{
-    background-color: #FFC9C9;
-    position: absolute;
-	display: none;
-	text-align: center;
-	top: 100%;
-	left: 0;
-	right: 0;
-}
-
-header ol a{
-	display: block;
-    line-height: 40px;
-    color: #707070;
-}
-
-header nav li:hover ol{
-	display: block;
-} */
 
 header ol a:hover{
 	background-color: #fdd0d0;
@@ -122,7 +103,9 @@ header ul a:hover{
 .this_page > a{
 	color: #FF4646;
 }
-
+.this_page{
+	color: #FF4646;
+}
 /* ===== page_title ===== */
 .page_title{
 	margin: 0 auto;
@@ -213,10 +196,6 @@ footer .text{
 	header nav.main_nav{
 		width: 100%;
 	}
-
-	/* header ul.nav_list{
-		width: 100%;
-	} */
 	header ul.nav_list > li{
 		display: block;
 		padding: 10px;
@@ -230,6 +209,7 @@ footer .text{
 	}
 	header nav ol{
 		margin-left: 8%;
+		display: none;
 	}
 	nav.main_nav{
 		display: none;
